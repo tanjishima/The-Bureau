@@ -76,7 +76,7 @@ src:url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,40
   
   .right-arrow{
     @apply absolute bottom-[30%] right-[18%] translate-y-[-50%] translate-x-[-50%] text-center ;
-}
+  }
 
 /* experience-section */
 .experience-section{
