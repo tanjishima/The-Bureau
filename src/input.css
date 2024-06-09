@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@font-face{
+ font-family: "Schibsted";
+ src:url(../Schibsted_Grotesk/SchibstedGrotesk-VariableFont_wght.ttf) ;
+}
+
+@font-face{
+font-family:"Lora";
+src:url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap') ;
+
+}
+
+.scroll-img{
+    animation: scrollText 40s infinite linear;
+}
+
+
+
+@keyframes scrollText {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+
+}
+
+
+
+@layer components{
+
+  /* header-start */
+  .header-section{
+    @apply bg-white;
+  }
+  .header-container{
+    @apply  px-4 sm:px-6 lg:px-8;
+  }
+  .header-content{
+    @apply flex h-[88px] items-center justify-between;
+  }
+  .logo{
+    @apply flex  gap-2 md:flex md:items-center; 
+  }
+  
+ /* hero-section */
+ .hero-container{
+  @apply  max-w-[1100px] mx-auto mt-[65px] flex flex-col gap-7 px-4 sm:px-6 lg:px-6 ;
+ }
+ .hero-container p{
+  @apply font-Grotesk font-normal text-xl leading-7 w-auto md:text-2xl md:leading-8;
+ }
+ .hero-social-menu{
+  @apply flex items-center justify-center flex-col-reverse  gap-8 md:flex-row md:justify-between;
+ }
+ 
+ /* servic-section */
+ .servic-container{
+  @apply  max-w-[1200px] mx-auto px-8 mt-20;
+  }
+  .servic-border{
+    @apply  border-t-2 border-black;
+  }
+  .servic-header {
+    @apply  lg:p-8 mt-9;
+  }
+ 
+
+  .servic-img img{
+    @apply w-[350px] absolute -top-12 right-0 scale-0 group-hover:scale-100 duration-500 ;
+  }
+  
+  .right-arrow{
+    @apply absolute bottom-[30%] right-[18%] translate-y-[-50%] translate-x-[-50%] text-center ;
+}
+
+/* experience-section */
+.experience-section{
+  @apply flex flex-col items-center gap-6 justify-center md:flex-row md:justify-around mt-8 mb-16;
+}
+.experience{
+  @apply flex flex-col gap-2
+}
+.experience h2{
+  @apply font-Grotesk font-bold text-5xl md:text-[64px] ;
+}
+.experience p{
+  @apply font-Grotesk font-normal text-xl md:text-2xl ;
+}
+/* blog-section */
+.blog-container{
+  @apply max-w-[1200px] mx-auto p-8;
+}
+.blog-border{
+  @apply border-t-2 border-black;
+}
+.blog-header{
+  @apply flex flex-col gap-2 mt-8 md:px-16;
+}
+.blog-header h3{
+  @apply font-lora font-medium italic text-xl md:text-2xl;
+}
+.blog-header p{
+  @apply font-Grotesk font-bold text-5xl md:text-[64px];
+}
+
+.blog {
+  @apply flex flex-col gap-6 ;
+}
+.blogs{
+  @apply grid gap-8 mt-8 md:grid-cols-3 md:gap-4 md:mt-12 
+}
+
+.blog img{
+  @apply md:w-[368px] max-2xl:h-[320px] flex-shrink-0 object-cover;
+}
+.blog-content{
+  @apply flex flex-col gap-2;
+}
+.blog-content h3{
+  @apply font-Grotesk font-normal text-[16px];
+}
+.blog-container h2{
+   @apply font-Grotesk font-bold text-[28px] leading-[36px] hover:underline; 
+}
+.blog-content p{
+  @apply font-Grotesk font-normal text-xl leading-7;
+}
+/* footer-section */
+.footer{
+  @apply flex flex-col-reverse md:flex-row md:justify-between p-5;
+}
+.footer p{
+  @apply font-Grotesk font-normal text-[16px];
+}
+.footer-menu{
+  @apply flex flex-col gap-6 md:flex-row;
+}
+.footer-menu li{
+  @apply font-Grotesk font-normal text-[16px] hover:underline;
+}
+
+}
