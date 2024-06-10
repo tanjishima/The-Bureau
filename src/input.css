@@ -143,5 +143,4 @@ src:url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,40
 .footer-menu li{
   @apply font-Grotesk font-normal text-[16px] hover:underline;
 }
-
 }
